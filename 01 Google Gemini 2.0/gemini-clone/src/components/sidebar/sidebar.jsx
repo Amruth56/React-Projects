@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className="sidebar">
       {/* sidebar top elements */}
       <div className="top">
-        <img className="menu" src={assets.menu_icon} alt="" />
+        <img className="menu" src="/src/assets/menu_icon.png" alt="" />
 
         {/* To start a new Chat */}
         <div className="new-chat">

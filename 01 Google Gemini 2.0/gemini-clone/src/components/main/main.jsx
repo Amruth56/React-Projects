@@ -55,7 +55,7 @@ const Main = () => {
           </div>
         </div> 
         <p className="bottom-info">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, delectus rerum dignissimos et harum amet atque tenetur quos impedit unde.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, delectus rerum dignissimos et harum
         </p>
       </div>
     </div>

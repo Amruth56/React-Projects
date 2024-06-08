@@ -34,9 +34,14 @@ const LoginSignup = () => {
           <input type="password" placeholder="Password" />
         </div>
       </div>
-      <div className="forgot-password">
-        Forgot Password? <span> Click Here</span>
-      </div>
+      {action === "Login" ? (
+        <div className="forgot-password">
+          Forgot Password? <span> Click Here</span>
+        </div>
+      ) : (
+        <div></div>
+      )}
+
       <div className="submit-container">
         <div
           className={action === "Login" ? "submit gray" : "submit"}

@@ -6,3 +6,40 @@
     background: #fff;
     padding-bottom: 30px;
 }
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text{
+    color: #3c009d;
+    font-size: 30px ;
+    font-weight: bold;
+}
+
+.underline{
+    width: 45px;
+    height: 5px;
+    background: #000;
+    border-radius: 7px;
+}
+
+.inputs{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 30px 0px;
+    border-radius: 30px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid #000;
+}

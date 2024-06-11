@@ -67,3 +67,27 @@
     background: rgb(6, 128, 172);
     cursor: pointer;
   }
+
+  .loading-bar{
+    /* width: 510px; */
+    width: 0px;
+    height: 8px;
+    background:  rgb(174, 3, 80) ;
+    border-radius: 3px;
+  }
+
+  .loading-text{
+    font-size: 18px;
+  }
+
+  .loading-bar-full{
+    width: 510px;
+    height: 8px;
+    background:  rgb(174, 3, 80) ;
+    border-radius: 3px;
+    transition: 10s;
+  }
+
+  .display-none{
+    display: none;
+  }

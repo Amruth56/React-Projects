@@ -4,12 +4,14 @@ import default_image from "../Assets/minions.png";
 
 const ImageGenerator = () => {
   const [image_url, setImage_url] = useState("/");
+  const [loading, setLoading] = useState(false)
   let inputref = useRef(null);
 
   const imageGenerator = async () => {
     if (inputref.current.value === "") {
       return 0;
     }
+    setLoading(true)
     const response = await fetch(
       "https://api.openai.com/v1/images/generations",
       {
@@ -35,6 +37,7 @@ const ImageGenerator = () => {
     let data = await response.json();
     let data_array = data.data;
     setImage_url(data_array[0].url);
+    setLoading(false)
   };
 
   return (
@@ -47,8 +50,8 @@ const ImageGenerator = () => {
           <img src={image_url === "/" ? default_image : image_url} alt="" />
         </div>
         <div className="loading">
-          <div className="loading-bar"></div>
-          <div className="loading-text">Loading...</div>
+          <div className={loading? "loading-bar-full": "loading-bar"}></div>
+          <div className={loading? "loading-text" : "display-none"}>Loading...</div>
         </div>
       </div>
       <div className="search-box">

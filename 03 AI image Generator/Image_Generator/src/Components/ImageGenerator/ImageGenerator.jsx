@@ -46,6 +46,10 @@ const ImageGenerator = () => {
         <div className="image">
           <img src={image_url === "/" ? default_image : image_url} alt="" />
         </div>
+        <div className="loading">
+          <div className="loading-bar"></div>
+          <div className="loading-text">Loading...</div>
+        </div>
       </div>
       <div className="search-box">
         <input

@@ -5,7 +5,7 @@ import default_image from '../Assets/minions.png'
 const ImageGenerator = () => {
   return (
     <div className = 'ai-image-generator'>
-        <div className="header">AI image <span>Generator</span></div>
+        <div className="header">AI image <span>GENERATOR</span></div>
         <div className="img-loading">
           <div className="image">
             <img src={default_image} alt="" />

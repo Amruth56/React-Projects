@@ -20,8 +20,21 @@ const ImageGenerator = () => {
             "Bearer sk-proj-SM094Ox010Itilr84XVBT3BlbkFJTKGwaeElTDqXmdAwGnc7",
           "User-Agent": "Chrome",
         },
+        body: JSON.stringify({
+          // to get text written in the input field
+          prompt: `${inputref.current.value}`,
+          // to get 1 image
+          n: 1,
+          // size of the image
+          size: "512x512",
+        }),
       }
     );
+
+    // to pass the response variable in JSON
+    let data = await response.json();
+    let data_array = data.data;
+    setImage_url(data_array[0].url);
   };
 
   return (
@@ -41,7 +54,14 @@ const ImageGenerator = () => {
           className="search-input"
           placeholder="Search"
         />
-        <div className="generate-btn">Generate</div>
+        <div
+          className="generate-btn"
+          onClick={() => {
+            imageGenerator();
+          }}
+        >
+          Generate
+        </div>
       </div>
     </div>
   );

@@ -29,3 +29,41 @@
     width:512px ;
     border-radius: 15px;
   }
+
+  .search-box{
+     display: flex;
+     width: 1000px;
+     height: 95px;
+     justify-content: space-around;
+     align-items: center;
+     border-radius: 20px;
+     background: #293c46;
+  }
+
+  .search-input{
+    width: 600px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 35px;
+    margin-right: 35px;
+  }
+
+  .search-input::placeholder{
+    color: #999;
+  }
+
+  .generate-btn{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 300px;
+    height: 85px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: rgb(6, 128, 172);
+    cursor: pointer;
+  }

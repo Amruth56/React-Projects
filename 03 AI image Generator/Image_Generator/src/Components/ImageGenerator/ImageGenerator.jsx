@@ -17,9 +17,9 @@ const ImageGenerator = () => {
       {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+         "Content-Type": "application/json",
           Authorization:
-            "Bearer sk-proj-SM094Ox010Itilr84XVBT3BlbkFJTKGwaeElTDqXmdAwGnc7",
+            // "Bearer ---OpenAi API---", here generate your own API ussing the help of OpenAI API.
           "User-Agent": "Chrome",
         },
         body: JSON.stringify({

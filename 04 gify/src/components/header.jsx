@@ -21,9 +21,16 @@ const Header = () => {
             <Link to='/favorites'>Favorite GIFs</Link>
         </div>
         <button>
-            <HiMiniBars3BottomRight className='text-sky-400 block lg:hidden'></HiMiniBars3BottomRight>
+            <HiMiniBars3BottomRight className='text-sky-400 block lg:hidden' size={30}></HiMiniBars3BottomRight>
         </button>
       </div>
+      {showCategories && <div className ="absolute right-0 top-14 px-10 pb-9 w-full gradient z-20">
+        <span>Categories</span>
+        <hr></hr>
+        <div>
+            <Link classname="font-bold">Reactions </Link>
+        </div>
+      </div> }
     </nav>
   );
 };

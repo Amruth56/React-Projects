@@ -14,8 +14,8 @@ const Header = () => {
           <h1 className="text-5xl font-bold tracking-tight cursor-pointer">GIFY</h1>
         </Link>
         <Link className="px-4 py-1 hover:gradient border-b-4 hidden lg:block">reactions</Link>
-        <button >
-            <HiEllipsisVertical size={35} className="py-0.5 hover:gradient border-b-4 hidden lg:block"></HiEllipsisVertical>
+        <button onClick = {()=>setShowCategories(!showCategories)}>
+            <HiEllipsisVertical size={35} className={`py-0.5 hover:gradient ${showCategories?'gradient':''} border-b-4 hidden lg:block`} ></HiEllipsisVertical>
         </button>
       </div>
     </nav>

@@ -21,4 +21,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(5, 42, 51)
+}
+
+.item{
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    margin: 9px;
+    height: 80px;
+    width: 500px;
+    background-color: rgb(47, 73, 80)
+}
+.title{
+    color: white;
 }

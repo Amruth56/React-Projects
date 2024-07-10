@@ -6,6 +6,17 @@
   align-items: center;
   color: white;
   background-color: rgb(55, 140, 161);
+  flex-direction: column;
+  gap: 50px;
+}
+
+.wrapper button{
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 .accordian {

@@ -9,17 +9,20 @@ const Header = () => {
     console.log("hiii");
     setToggle(true);
   };
+  const hideSideMenu = () => {
+    setToggle(false);
+  }
   return (
     <>
       <div
-        className="black-overlay w-full h-full fixed duration-500"
+        className="black-overlay w-full h-full fixed duration-500" onClick = {hideSideMenu}
         style={{
           opacity: toggle ? 1 : 0,
           visibility: toggle ? "visible" : "hidden",
         }}
       >
         <div
-          className="w-[500px] h-full bg-white absolute duration-[600ms]"
+          className="w-[500px] h-full bg-white absolute duration-[400ms]"
           style={{ left: toggle ? "0%" : "-100%" }}
         ></div>
       </div>

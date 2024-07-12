@@ -13,10 +13,16 @@ const Header = () => {
     <>
       <div
         className="black-overlay w-full h-full fixed duration-500"
-        style={{ opacity: toggle ? 1 : 0,
-            visibility: toggle ? 'visible' : 'hidden' }}
-         
-      ></div>
+        style={{
+          opacity: toggle ? 1 : 0,
+          visibility: toggle ? "visible" : "hidden",
+        }}
+      >
+        <div
+          className="w-[500px] h-full bg-white absolute duration-[600ms]"
+          style={{ left: toggle ? "0%" : "-100%" }}
+        ></div>
+      </div>
       <header className="p-[15px] shadow-xl text-[#686b78]">
         <div className="max-w-[1200px] mx-auto border border-red-200 flex items-center">
           <div className="w-[100px]">

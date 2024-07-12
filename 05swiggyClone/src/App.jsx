@@ -1,11 +1,7 @@
-
-import './App.css'
+import "./App.css";
 
 function App() {
-
-  return (
-    <div className="text-3xl font-bold underline">hi</div>
-  )
+  return <div className="text-3xl text-[#3498db] font-bold  ">hi hello</div>;
 }
 
-export default App
+export default App;

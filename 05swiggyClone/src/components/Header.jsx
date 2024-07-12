@@ -50,6 +50,13 @@ const Header = () => {
               className="  inline  text-[#fc8019] cursor-pointer"
             />
           </div>
+          <nav className="flex list-none gap-4 ml-auto font-semibold text-[18px]">
+            <li>Search</li>
+            <li>Offers</li>
+            <li>Help</li>
+            <li>Sign In</li>
+            <li>Cart</li>
+          </nav>
         </div>
       </header>
     </>

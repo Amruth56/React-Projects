@@ -23,7 +23,8 @@ const Header = () => {
     name:'Search'
   },{
     icon:<CiDiscount1 />,
-    name:'Offers'
+    name:'Offers',
+    sup:'New'
   },{
     icon:<IoMdHelpCircleOutline />,
     name:'Help'
@@ -81,6 +82,7 @@ const Header = () => {
                   <li className = 'flex items-center gap-2' key ={index}>
                     {link.icon}
                     {link.name}
+                    <sup className = 'text-orange-500'>{link.sup}</sup>
                   </li>
                 )
               }

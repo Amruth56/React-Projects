@@ -17,6 +17,24 @@ const Header = () => {
   const hideSideMenu = () => {
     setToggle(false);
   };
+
+  const links = [{
+    icon:<IoMdSearch />,
+    name:'Search'
+  },{
+    icon:<CiDiscount1 />,
+    name:'Offers'
+  },{
+    icon:<IoMdHelpCircleOutline />,
+    name:'Help'
+  },{
+    icon:<IoPersonOutline />,
+    name:'SignIn'
+  },{
+    icon:<IoCartOutline />,
+    name:'Cart'
+  },
+]
   return (
     <>
       <div
@@ -55,28 +73,19 @@ const Header = () => {
               className="  inline  text-[#fc8019] cursor-pointer"
             />
           </div>
-          <nav className="flex list-none gap-4 ml-auto font-semibold text-[18px] gap-6">
-            <li>
-              {" "}
-              <IoMdSearch className="flex items-center gap-3 " />
-              Search
-            </li>
-            <li>
-              <CiDiscount1 className="flex items-center gap-3" />
-              Offers
-            </li>
-            <li>
-              <IoMdHelpCircleOutline className="flex items-center gap-3" />
-              Help
-            </li>
-            <li>
-              <IoPersonOutline className="flex items-center gap-3" />
-              Sign In
-            </li>
-            <li>
-              <IoCartOutline className="flex items-center gap-3" />
-              Cart
-            </li>
+          <nav className="flex list-none gap-4 ml-auto font-semibold text-[18px] gap-10 ">
+           {
+            links.map(
+              (link, index) => {
+                return (
+                  <li className = 'flex items-center gap-2' key ={index}>
+                    {link.icon}
+                    {link.name}
+                  </li>
+                )
+              }
+            )
+           }
           </nav>
         </div>
       </header>

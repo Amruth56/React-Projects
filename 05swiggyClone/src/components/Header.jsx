@@ -1,6 +1,11 @@
 import React from "react";
 import { RxCaretDown } from "react-icons/rx";
 import { useState } from "react";
+import { IoMdSearch } from "react-icons/io";
+import { CiDiscount1 } from "react-icons/ci";
+import { IoMdHelpCircleOutline } from "react-icons/io";
+import { IoCartOutline } from "react-icons/io5";
+import { IoPersonOutline } from "react-icons/io5";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -50,12 +55,28 @@ const Header = () => {
               className="  inline  text-[#fc8019] cursor-pointer"
             />
           </div>
-          <nav className="flex list-none gap-4 ml-auto font-semibold text-[18px]">
-            <li>Search</li>
-            <li>Offers</li>
-            <li>Help</li>
-            <li>Sign In</li>
-            <li>Cart</li>
+          <nav className="flex list-none gap-4 ml-auto font-semibold text-[18px] gap-6">
+            <li>
+              {" "}
+              <IoMdSearch className="flex items-center gap-3 " />
+              Search
+            </li>
+            <li>
+              <CiDiscount1 className="flex items-center gap-3" />
+              Offers
+            </li>
+            <li>
+              <IoMdHelpCircleOutline className="flex items-center gap-3" />
+              Help
+            </li>
+            <li>
+              <IoPersonOutline className="flex items-center gap-3" />
+              Sign In
+            </li>
+            <li>
+              <IoCartOutline className="flex items-center gap-3" />
+              Cart
+            </li>
           </nav>
         </div>
       </header>

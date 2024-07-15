@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { HiArrowSmLeft } from "react-icons/hi";
 import { HiArrowSmRight } from "react-icons/hi";
 
@@ -7,6 +7,9 @@ import { HiArrowSmRight } from "react-icons/hi";
 function Category() {
     const[categories, setCategories] = useState([]);
     const fetchCategory = async () => {
+        const response = await fetch('http://localhost:5000/categories')
+        const data = await response.json()
+        setCategories(data)
 
     }
 

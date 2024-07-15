@@ -27,6 +27,17 @@ function Category() {
           </div>
         </div>
       </div>
+      <div className="flex">
+        {
+            categories.map((cat, index) => {
+                return (
+                    <div key={index} className="flex-grow">
+                        <img src={"http://localhost:5000/images/"+cat.image} alt=""></img>
+                    </div>
+                )
+        }
+    )}
+      </div>
     </div>
   );
 }

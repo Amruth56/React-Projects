@@ -1,4 +1,6 @@
 import "./App.css";
+import React, { useState } from "react";
+import Background from "./Components/Background/Background";
 
 function App() {
   let heroData = [
@@ -7,7 +9,12 @@ function App() {
     { text1: "Give Into", text2: "Your Passions" },
   ];
 
-  return <>hi</>;
+  const [heroCount, setHeroCount] = useState(2);
+  const [playStatus, setPlayStatus] = useState(false);
+
+  return <div>
+    <Background playStatus={playStatus} heroCount={heroCount}></Background>
+  </div>;
 }
 
 export default App;

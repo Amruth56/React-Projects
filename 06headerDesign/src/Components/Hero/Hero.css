@@ -22,3 +22,15 @@
   background-color: white;
   cursor: pointer;
 }
+
+.hero-explore p{
+    color: #292929;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero-dot-play{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}

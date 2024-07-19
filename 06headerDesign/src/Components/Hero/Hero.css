@@ -50,3 +50,20 @@
     border-radius: 7px ;
     cursor: pointer;
 }
+
+.hero-dot.orange{
+    background:orangered;
+}
+
+.hero-play{
+    display:flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-p-text{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+
+}

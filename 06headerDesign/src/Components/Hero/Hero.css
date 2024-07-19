@@ -34,3 +34,19 @@
     display: flex;
     justify-content: space-between;
 }
+
+.hero-dots{
+    display:flex;
+    list-style: none;
+    gap: 23px;
+    align-items: center;
+
+}
+
+.hero-dot{
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 7px ;
+    cursor: pointer;
+}

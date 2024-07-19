@@ -22,8 +22,8 @@ const Hero = ({
         <p>Explore the feature</p>
         <img src={arrow_btn}></img>
       </div>
-      <div className="hero-dor-play">
-        <ul className="hero-dost">
+      <div className="hero-dot-play">
+        <ul className="hero-dots">
           <li
             onClick={() => setHeroCount(0)}
             className={heroCount === 0 ? "hero-dot orange" : "hero-dot"}

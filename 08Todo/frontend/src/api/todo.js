@@ -11,14 +11,14 @@ export const fetchTodos = async ({ queryKey }) => {
   return res.json();
 };
 
-export const createTodo = async ({ title, token }) => {
+export const createTodo = async ({ title , priority, completed,  token }) => {
   const res = await fetch(BASE, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`
     },
-    body: JSON.stringify({ title })
+    body: JSON.stringify({ title, priority, completed })
   });
 
   if (!res.ok) throw new Error("Create failed");

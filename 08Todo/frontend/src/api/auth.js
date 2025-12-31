@@ -10,3 +10,14 @@ export const loginUser = async (data) => {
   if (!res.ok) throw new Error("Login failed");
   return res.json();
 };
+
+
+export const signupUser = async(data) => {
+    const res = await fetch(`${BASE}/register`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+    });
+    if (!res.ok) throw new Error("Signup failed");
+    return res.json();
+}
